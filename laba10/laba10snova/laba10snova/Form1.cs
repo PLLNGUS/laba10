@@ -154,5 +154,11 @@ namespace laba10snova
         System.IO.File.WriteAllText(path, IOFile.content);
 
     }
+        private void показатьТаблицуToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form2 anForma = new Form2();
+            anForma.ShowDialog();
+        }
+
     }
 }

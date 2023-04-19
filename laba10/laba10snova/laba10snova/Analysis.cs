@@ -44,11 +44,6 @@ namespace laba10snova
             }
 
         }
-
-        private void Analysis_Load(object sender, EventArgs e)
-        {
-
-        }
     }
     
     

@@ -48,7 +48,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "Analysis";
             this.Text = "Analysis";
-            this.Load += new System.EventHandler(this.Analysis_Load);
+            this.Load += new System.EventHandler(this.AnalysisForma_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
