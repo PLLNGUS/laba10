@@ -1,0 +1,6 @@
+C:\Users\elnar\source\repos\laba10\github\laba10\laba10snova\laba10snova\obj\Debug\laba10snova.csproj.AssemblyReference.cache
+C:\Users\elnar\source\repos\laba10\github\laba10\laba10snova\laba10snova\obj\Debug\laba10snova.csproj.SuggestedBindingRedirects.cache
+C:\Users\elnar\source\repos\laba10\github\laba10\laba10snova\laba10snova\obj\Debug\laba10snova.Form1.resources
+C:\Users\elnar\source\repos\laba10\github\laba10\laba10snova\laba10snova\obj\Debug\laba10snova.Properties.Resources.resources
+C:\Users\elnar\source\repos\laba10\github\laba10\laba10snova\laba10snova\obj\Debug\laba10snova.csproj.GenerateResource.cache
+C:\Users\elnar\source\repos\laba10\github\laba10\laba10snova\laba10snova\obj\Debug\laba10snova.csproj.CoreCompileInputs.cache
