@@ -88,10 +88,11 @@ namespace laba10snova
                             lists[temp].Add(mas[i]);
                             iteration++;
                             perestanovka++;
-                            //form.AddItemsRichTextBox((int)lists[temp][step]);
+                          
 
                         }
                         //сборка
+
                         int k = 0;
                         for (int i = 0; i < 10; ++i)
                         {

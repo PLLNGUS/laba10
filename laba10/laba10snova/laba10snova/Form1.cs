@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Runtime.Remoting.Contexts;
 using System.Text;
@@ -123,5 +124,35 @@ namespace laba10snova
         {
             richTextBox1.Text = string.Empty;
         }
+        private void открытьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            {
+                if (openFileDialog1.ShowDialog() == DialogResult.Cancel) return;
+
+                path = openFileDialog1.FileName;
+                using (StreamReader sr = new StreamReader(path, System.Text.Encoding.Default))
+                {
+                    try
+                    {
+                        string str = sr.ReadToEnd();
+                        Context.array = str.Split(' ').Select(i => Convert.ToInt32(i)).ToArray();
+                        richTextBox1.Text = "\tИсходный массив\n [";
+                        foreach (int i in Context.array)
+                            richTextBox1.Text += i + " ";
+                        richTextBox1.Text += "]\n";
+                    }
+                    catch { MessageBox.Show("Ошибка"); }
+
+                }
+            }
+        }
+    private void сохранитьToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        if (saveFileDialog1.ShowDialog() == DialogResult.Cancel)
+            return;
+        path = saveFileDialog1.FileName;
+        System.IO.File.WriteAllText(path, IOFile.content);
+
+    }
     }
 }
