@@ -64,7 +64,7 @@ namespace laba10snova
             return null;
         }
     }
-    public class Podraz : Sort, IStrategy
+    public class Porazrad : Sort, IStrategy
     {
         public int iterationCount = 0;
         public int[] Algorithm(int[] mas, bool flag = true)

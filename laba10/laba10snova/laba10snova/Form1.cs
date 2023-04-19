@@ -55,17 +55,14 @@ namespace laba10snova
                 {
                     this.context = new Context(new BubbleSort());
                     context.ExecuteAlgorithm();
-                    //this.AddItemsRichTextBox();
-                    //IOFile.SaveData();
+                   
                 }
                 if (radioButton2.Checked == true)
                 {
-                    this.context = new Context(new Podraz());
+                    this.context = new Context(new Porazrad());
                     context.ExecuteAlgorithm();
-                    // this.AddItemsRichTextBox();
-                    //IOFile.SaveData();
+                    
                 }
-
 
             }
 

@@ -37,5 +37,10 @@ namespace laba10snova
                 Context.array[i] = rnd.Next(0, 1000);
             this.Close();
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

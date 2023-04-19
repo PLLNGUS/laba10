@@ -38,6 +38,7 @@
             // trackBar1
             // 
             this.trackBar1.Location = new System.Drawing.Point(233, 132);
+            this.trackBar1.Maximum = 100;
             this.trackBar1.Name = "trackBar1";
             this.trackBar1.Size = new System.Drawing.Size(271, 45);
             this.trackBar1.TabIndex = 0;
@@ -82,6 +83,7 @@
             this.Controls.Add(this.trackBar1);
             this.Name = "Form2";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
