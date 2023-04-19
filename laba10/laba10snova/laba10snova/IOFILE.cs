@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,29 +11,24 @@ namespace laba10snova
     public class IOFile
     {
         public static string content;
-
         public static void FillContent()
         {
             foreach (var i in Context.array)
             {
                 content += Convert.ToString(i) + ' ';
             }
-                content += '\n';
+            content += '\n';
         }
-
         public static string InputInfoAboutComparison(int first, int second)
         {
-            content     += "Сравниваем " + Convert.ToString(first) + " и " + Convert.ToString(second) + '\n';
-
-            return      "Сравниваем " + Convert.ToString(first) + " и " + Convert.ToString(second) + '\n';
+            content += "Сравниваем " + Convert.ToString(first) + " и " + Convert.ToString(second) + '\n';
+            return "Сравниваем " + Convert.ToString(first) + " и " + Convert.ToString(second) + '\n';
         }
         public static string InputInfoAboutTransposition(int first, int second)
         {
             content += "Перестановка " + Convert.ToString(first) + " и " + Convert.ToString(second) + '\n';
-
-                return "Перестановка " + Convert.ToString(first) + " и " + Convert.ToString(second) + '\n';
+            return "Перестановка " + Convert.ToString(first) + " и " + Convert.ToString(second) + '\n';
         }
-
 
 
     }
