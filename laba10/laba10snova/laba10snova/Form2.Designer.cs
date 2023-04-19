@@ -41,6 +41,7 @@
             this.trackBar1.Name = "trackBar1";
             this.trackBar1.Size = new System.Drawing.Size(271, 45);
             this.trackBar1.TabIndex = 0;
+            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
             // label1
             // 
@@ -69,7 +70,6 @@
             this.label2.Size = new System.Drawing.Size(39, 13);
             this.label2.TabIndex = 4;
             this.label2.Text = "Число";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Form2
             // 

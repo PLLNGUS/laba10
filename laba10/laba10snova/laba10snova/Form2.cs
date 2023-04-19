@@ -18,22 +18,15 @@ namespace laba10snova
             InitializeComponent();
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void trackBar1_Scroll(object sender, EventArgs e)
         {
             bruh = trackBar1.Value;
-            label2.Text = bruh.ToString();
-        }
-
-       
-
-        private void Generation_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
+            label1.Text = bruh.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)

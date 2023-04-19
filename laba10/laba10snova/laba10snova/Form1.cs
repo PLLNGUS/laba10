@@ -17,13 +17,37 @@ namespace laba10snova
         public Form1()
         {
             InitializeComponent();
+            BubbleSort.form = this;
         }
-        Context context;
        
+        int count = 0;
+        Context context;
+        string path = "";
 
+        public void AddItemsRichTextBox(int first = -1, int second = -1)
+        {
+            richTextBox1.AppendText("");
+            foreach (var item in Context.array)
+            {
+                if (item == first || item == second)
+                {
+                    richTextBox1.Text += '[' + Convert.ToString(item) + ']' + " ";
+                }
+                else
+                {
+                    richTextBox1.Text += Convert.ToString(item) + " ";
+                }
+            }
+            richTextBox1.Text += "\n";
+            count++;
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+           
+        }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             if (Context.array != null)
             {
@@ -31,24 +55,20 @@ namespace laba10snova
                 {
                     this.context = new Context(new BubbleSort());
                     context.ExecuteAlgorithm();
-                    this.AddItemsListBox();
-                    IOFile.SaveData();
-                    buttonSort.Enabled = false;
+                    //this.AddItemsRichTextBox();
+                    //IOFile.SaveData();
                 }
-                
-                IOFile.content = "";
-            }
-            else
-            {
-                MessageBox.Show("Массив пуст, сортировка невозможна");
+                if (radioButton2.Checked == true)
+                {
+                    this.context = new Context(new Podraz());
+                    context.ExecuteAlgorithm();
+                    // this.AddItemsRichTextBox();
+                    //IOFile.SaveData();
+                }
+
+
             }
 
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            
-              
 
         }
 
@@ -72,7 +92,37 @@ namespace laba10snova
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        
+
+        private void таблицаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Analys.AnalisSorts.Count > 0)
+            {
+                Analysis analysis = new Analysis();
+                analysis.Show();
+            }
+            else
+            {
+                MessageBox.Show("Анализировать нечего");
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form2 Value = new Form2();
+            Value.ShowDialog();
+            richTextBox1.Clear();
+            richTextBox1.Text += "Начальный массив:\n";
+            foreach (int i in Context.array) richTextBox1.Text += i + " ";
+            richTextBox1.Text += "\n";
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
         {
             richTextBox1.Text = string.Empty;
         }

@@ -5,3 +5,9 @@ C:\Users\elnar\source\repos\laba10\github\laba10\laba10snova\laba10snova\obj\Deb
 C:\Users\elnar\source\repos\laba10\github\laba10\laba10snova\laba10snova\obj\Debug\laba10snova.csproj.GenerateResource.cache
 C:\Users\elnar\source\repos\laba10\github\laba10\laba10snova\laba10snova\obj\Debug\laba10snova.csproj.CoreCompileInputs.cache
 C:\Users\elnar\source\repos\laba10\github\laba10\laba10snova\laba10snova\obj\Debug\laba10snova.Form2.resources
+C:\Users\elnar\source\repos\laba10\github\laba10\laba10snova\laba10snova\obj\Debug\laba10snova.Analysis.resources
+C:\Users\elnar\source\repos\laba10\github\laba10\laba10snova\laba10snova\bin\Debug\laba10snova.exe.config
+C:\Users\elnar\source\repos\laba10\github\laba10\laba10snova\laba10snova\bin\Debug\laba10snova.exe
+C:\Users\elnar\source\repos\laba10\github\laba10\laba10snova\laba10snova\bin\Debug\laba10snova.pdb
+C:\Users\elnar\source\repos\laba10\github\laba10\laba10snova\laba10snova\obj\Debug\laba10snova.exe
+C:\Users\elnar\source\repos\laba10\github\laba10\laba10snova\laba10snova\obj\Debug\laba10snova.pdb
